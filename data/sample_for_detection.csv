@@ -1,0 +1,13 @@
+duration,protocol_type,service,flag,src_bytes,dst_bytes,land,wrong_fragment,urgent,hot,num_failed_logins,logged_in,num_compromised,root_shell,su_attempted,num_root,num_file_creations,num_shells,num_access_files,num_outbound_cmds,is_host_login,is_guest_login,count,srv_count,serror_rate,srv_serror_rate,rerror_rate,srv_rerror_rate,same_srv_rate,diff_srv_rate,srv_diff_host_rate,dst_host_count,dst_host_srv_count,dst_host_same_srv_rate,dst_host_diff_srv_rate,dst_host_same_src_port_rate,dst_host_srv_diff_host_rate,dst_host_serror_rate,dst_host_srv_serror_rate,dst_host_rerror_rate,dst_host_srv_rerror_rate,label
+0,tcp,http,SF,210,761,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,2,4,0.0,0.0,0.0,0.0,1.0,0.0,0.5,175,255,1.0,0.0,0.01,0.01,0.0,0.0,0.0,0.0,normal
+0,tcp,http,SF,173,18386,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,4,0.0,0.0,0.0,0.0,1.0,0.0,0.0,30,247,1.0,0.0,0.03,0.04,0.0,0.0,0.0,0.0,normal
+0,tcp,http,REJ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0.0,0.0,1.0,1.0,1.0,0.0,0.0,2,247,1.0,0.0,0.5,0.07,0.0,0.0,1.0,0.62,normal
+0,tcp,netbios_ns,S0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,278,16,1.0,1.0,0.0,0.0,0.06,0.05,0.0,255,16,0.06,0.05,0.0,0.0,1.0,1.0,0.0,0.0,neptune
+0,tcp,private,S0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,236,20,1.0,1.0,0.0,0.0,0.08,0.07,0.0,255,16,0.06,0.06,0.0,0.0,1.0,1.0,0.0,0.0,neptune
+0,tcp,gopher,S0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,206,24,1.0,1.0,0.0,0.0,0.12,0.05,0.0,255,24,0.09,0.05,0.0,0.0,1.0,1.0,0.0,0.0,neptune
+0,icmp,eco_i,SF,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0.0,0.0,0.0,0.0,1.0,0.0,0.0,3,51,1.0,0.0,1.0,0.25,0.0,0.0,0.0,0.0,ipsweep
+0,icmp,eco_i,SF,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,51,0.0,0.0,0.0,0.0,1.0,0.0,1.0,2,8,1.0,0.0,1.0,0.5,0.0,0.0,0.0,0.0,ipsweep
+4,tcp,pop_3,SF,28,93,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0.0,0.0,0.0,0.0,1.0,0.0,0.0,255,212,0.83,0.02,0.0,0.0,0.0,0.0,0.04,0.0,guess_passwd
+0,tcp,telnet,SF,122,174,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0.0,0.0,0.0,0.0,1.0,0.0,0.0,255,202,0.79,0.02,0.0,0.0,0.0,0.0,0.02,0.03,guess_passwd
+0,tcp,ftp_data,SF,0,5696,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1,81,1.0,0.0,1.0,0.02,0.0,0.0,0.0,0.0,buffer_overflow
+35,tcp,ftp,SF,96,533,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0.0,0.0,0.0,0.0,1.0,0.0,0.0,221,3,0.01,0.03,0.0,0.0,0.0,0.0,0.0,0.0,rootkit
