@@ -67,7 +67,7 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python src/main.py
 
-
+```
 
 ## 🔍 System Workflow
 
@@ -99,19 +99,24 @@ python src/main.py
 
 ## 📸 Screenshots
 
-### Main GUI  
+### Main GUI
+
 ![GUI](screenshots/gui.png)
 
-### Training Process  
+### Training Process
+
 ![Training](screenshots/train.png)
 
-### Attack Detection  
+### Attack Detection
+
 ![Detection](screenshots/detection.png)
 
-### Statistics  
+### Statistics
+
 ![Stats](screenshots/stats.png)
 
-### Logs  
+### Logs
+
 ![Logs](screenshots/logs.png)
 
 
