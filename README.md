@@ -1,90 +1,120 @@
-🛡️ Neural Network Based Intrusion Detection System (IDS) 🛡️
+# ML Based Intrusion Detection System (IDS)
 
-A Machine Learning powered Intrusion Detection System with a retro-style GUI dashboard that simulates real-time network monitoring, attack detection, and SOC-style analytics.
+Cybersecurity + Machine Learning portfolio project demonstrating how neural networks can be used to detect malicious network activity.
 
-This project integrates:
+This project implements an anomaly-based Intrusion Detection System using a Neural Network (MLP) trained on the NSL-KDD dataset, with a graphical monitoring dashboard that simulates real-world security alerting.
 
-🔐 Security 
-📊 Data Science  
-🧠 Neural Network 
+🎯 **Target Roles:** Security Analyst • SOC Analyst • Security Engineer (Junior) • Internships
 
-Project Features:
-1.Neural Network (MLP) attack classifier  
-2.Trained on NSL-KDD dataset  
-3.Detects major network attacks(trained with NSL KDD dataset):
-    - DoS (neptune, smurf, back, etc.)
-    - Probe (portsweep, ipsweep)
-    - R2L (guess_passwd, warezclient)
-    - U2R (rootkit, buffer_overflow)
-4.Upload custom traffic CSV  
-5.Real-time detection simulation  
-6.Flashing alert when attack detected  
-7.Live counters (Total / Normal / Attacks)  
-8.Attack severity colors  
-9.SOC-style dashboard  
-10.Logs with attack highlighting  
+---
 
+## 🧠 Why This Project Matters
 
-Screenshots :
+This project demonstrates:
 
-Main GUI
-[GUI](screenshots/gui.png)
+- Applying machine learning to real cybersecurity datasets  
+- Understanding of network attack categories and threat behavior  
+- Building an end-to-end detection pipeline, not just a model  
+- Presenting results through a security-style dashboard  
 
-Training Process
-[Training](screenshots/train.png)
+---
 
-Attack Detection
-[Detection](screenshots/detection.png)
+## 🚨 What the System Does
 
-Statistics
-[Stats](screenshots/stats.png)
+- Trains a Neural Network classifier to distinguish between normal and malicious traffic  
+- Detects and classifies common network attacks  
+- Displays alerts, logs, and traffic statistics in a GUI  
+- Allows testing with custom traffic CSV files  
 
-Logs
-[Logs](screenshots/logs.png)
+---
 
+## 🧠 Attack Categories Detected
 
-⚙️ Installation Guide
+- **DoS (Denial of Service)** – smurf, neptune, back  
+- **Probe / Reconnaissance** – portsweep, ipsweep  
+- **R2L (Remote to Local)** – credential-based attacks  
+- **U2R (User to Root)** – privilege escalation attacks  
 
-Step 1 — Download / Clone Project
-git clone 
-cd ml-intrusion-detection-system
-OR download ZIP and extract.
+---
 
-Step 2 — Create Virtual Environment
+## ⭐ Key Features
+
+- Security monitoring dashboard (GUI)  
+- Visual alerts for detected intrusions  
+- Event logging with attack highlighting  
+- Traffic statistics (normal vs malicious)  
+- Custom dataset support for experimentation  
+
+---
+
+## 🛠 Technical Stack
+
+- Python  
+- Machine Learning (MLP / Neural Networks)  
+- NSL-KDD cybersecurity dataset  
+- Data preprocessing & feature engineering  
+- Python-based GUI  
+
+---
+
+## ▶ How to Run
+
+```bash
+git clone https://github.com/j4nak445/intrusion-detection-system-.git
+cd intrusion-detection-system-
 python -m venv venv
-
-Step 3 — Activate Environment
-Step 4 — Install Required Libraries
+source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-Step 5 - Running the Application
-python -m src.gui
+python src/main.py
 
 
-How to Use the System (Demo)
 
-Step 1 — Train the Model
-Click Train Model → Select dataset file.
-The neural network learns attack patterns.
+## 🔍 System Workflow
 
-🔹 Step 2 — Simulate Detection
-Click Detect Attack
-The system analyzes sample network traffic.
+- Load and preprocess network traffic data  
+- Encode categorical features and normalize values  
+- Train a neural network classifier  
+- Predict intrusion vs normal traffic  
+- Display alerts and logs in the dashboard  
 
-🔹 Step 3 — Upload Custom CSV
-Click Upload Custom CSV to analyze your own dataset.
+---
 
-🔹 Step 4 — View Logs
-Click View Logs to see detection history.
-Attacks appear in red.
+## 📈 Security & ML Concepts Demonstrated
 
-🔹 Step 5 — View Statistics
-Click Show Statistics to visualize attack distribution.
+- Intrusion Detection Systems (IDS)  
+- Anomaly-based detection  
+- Network attack classification  
+- Feature encoding & normalization  
+- Neural network model training  
+- Security monitoring & alert visualization  
+
+---
+
+## ⚠️ Scope & Limitations
+
+- Uses a benchmark dataset (NSL-KDD) rather than live packet capture  
+- Intended for learning and portfolio demonstration, not production deployment  
+
+---
+
+## 📸 Screenshots
+
+### Main GUI  
+![GUI](screenshots/gui.png)
+
+### Training Process  
+![Training](screenshots/train.png)
+
+### Attack Detection  
+![Detection](screenshots/detection.png)
+
+### Statistics  
+![Stats](screenshots/stats.png)
+
+### Logs  
+![Logs](screenshots/logs.png)
 
 
-System Workflow
-
-Dataset preprocessing (encoding + scaling)
-Neural network training
-Real-time detection
-Logging & alerting
-Dashboard visualization
+Author:
+Janak
+Aspiring Cybersecurity Engineer
