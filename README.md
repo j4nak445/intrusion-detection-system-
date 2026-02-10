@@ -120,6 +120,6 @@ python src/main.py
 ![Logs](screenshots/logs.png)
 
 
-Author:
-Janak
-Aspiring Cybersecurity Engineer
+### Author:
+- Janak
+- Aspiring Cybersecurity Engineer
