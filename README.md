@@ -1,44 +1,90 @@
-# AI-Powered Smart Intrusion Detection & Network Traffic Analysis System
+🛡️ Neural Network Based Intrusion Detection System (IDS) 🛡️
 
-Quick start
+A Machine Learning powered Intrusion Detection System with a retro-style GUI dashboard that simulates real-time network monitoring, attack detection, and SOC-style analytics.
 
-1. Create and activate virtual environment (PowerShell):
+This project integrates:
 
-```powershell
-python -m venv .\venv
-.\venv\Scripts\Activate.ps1
-```
+🔐 Security 
+📊 Data Science  
+🧠 Neural Network 
 
-If activation is blocked: `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`
+Project Features:
+1.Neural Network (MLP) attack classifier  
+2.Trained on NSL-KDD dataset  
+3.Detects major network attacks(trained with NSL KDD dataset):
+    - DoS (neptune, smurf, back, etc.)
+    - Probe (portsweep, ipsweep)
+    - R2L (guess_passwd, warezclient)
+    - U2R (rootkit, buffer_overflow)
+4.Upload custom traffic CSV  
+5.Real-time detection simulation  
+6.Flashing alert when attack detected  
+7.Live counters (Total / Normal / Attacks)  
+8.Attack severity colors  
+9.SOC-style dashboard  
+10.Logs with attack highlighting  
 
-2. Install dependencies:
 
-```powershell
-pip install --upgrade pip
+Screenshots :
+
+Main GUI
+[GUI](screenshots/gui.png)
+
+Training Process
+[Training](screenshots/train.png)
+
+Attack Detection
+[Detection](screenshots/detection.png)
+
+Statistics
+[Stats](screenshots/stats.png)
+
+Logs
+[Logs](screenshots/logs.png)
+
+
+⚙️ Installation Guide
+
+Step 1 — Download / Clone Project
+git clone 
+cd ml-intrusion-detection-system
+OR download ZIP and extract.
+
+Step 2 — Create Virtual Environment
+python -m venv venv
+
+Step 3 — Activate Environment
+Step 4 — Install Required Libraries
 pip install -r requirements.txt
-```
+Step 5 - Running the Application
+python -m src.gui
 
-3. Place your dataset CSV(s) into the `data/` folder (e.g. `data/nsl_kdd.csv`).
 
-4. Train the model (example):
+How to Use the System (Demo)
 
-```powershell
-# from project root
-python -m src.model --csv data\nsl_kdd.csv
-```
+Step 1 — Train the Model
+Click Train Model → Select dataset file.
+The neural network learns attack patterns.
 
-5. Run the GUI:
+🔹 Step 2 — Simulate Detection
+Click Detect Attack
+The system analyzes sample network traffic.
 
-```powershell
-python src\gui.py
-```
+🔹 Step 3 — Upload Custom CSV
+Click Upload Custom CSV to analyze your own dataset.
 
-Project layout
+🔹 Step 4 — View Logs
+Click View Logs to see detection history.
+Attacks appear in red.
 
-- `data/` - put CSV dataset here
-- `models/` - trained model and preprocessor saved here
-- `logs/` - detection logs
-- `src/` - source modules
-- `requirements.txt` - Python dependencies
+🔹 Step 5 — View Statistics
+Click Show Statistics to visualize attack distribution.
 
-See `src/` for implementation details and further instructions.
+
+System Workflow
+
+Dataset preprocessing (encoding + scaling)
+Neural network training
+Real-time detection
+Logging & alerting
+Dashboard visualization
